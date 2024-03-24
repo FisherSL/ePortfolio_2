@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security - Cybersecurity Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Network Security</h1>
+        </div>
+    </header>
+
+    <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav>
+        <div class="exit-btn">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="network-security.html">Network Security</a>
+        <a href="secure-software.html">Secure Software Development</a>
+        <a href="risk-management.html">Risk Management</a>
+        <a href="secure-systems.html">Secure Systems Architecture</a>
+        <a href="human-factor.html">Human Factor</a>
+        <a href="digital-forensics.html">Digital Forensics and Cyber Law</a>
+        <a href="research-methods.html">Research Methods</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-text">
+            <p>Network security is a critical aspect of cybersecurity, focusing on protecting computer networks and
+                their
+                components from unauthorised access, attacks, and disruptions. In this section, we delve into the key
+                principles, technologies, and best practices in network security.</p>
+            <p>Topics covered:</p>
+            <ul>
+                <li>Firewalls and Intrusion Detection Systems (IDS)</li>
+                <li>Virtual Private Networks (VPNs)</li>
+                <li>Secure Network Design</li>
+                <li>Wireless Network Security</li>
+            </ul>
+    </section>
+
+    <section class="blog-section">
+        <!-- Slideshow container -->
+        <div class="blog-slideshow-container">
+            <div class="mySlides">
+                <article class="blog-post">
+                    <img src="media/pexels-brett-sayles-4339335.jpg" alt="Cover Image 1">
+                    <div class="post-content">
+                        <h2>The Equifax Data Breach - Firewalls and the Importance of Network Segmentation</h2>
+                        <p>
+                            The Equifax data breach of 2017 serves as a stark example of the critical role firewalls
+                            play in securing sensitive information. In this incident, hackers exploited a vulnerability
+                            in Apache Struts, a web application framework. The absence of a robust firewall and
+                            inadequate network segmentation allowed the attackers to move laterally within Equifax's
+                            network.
+                        </p>
+                        <a href="ns-blog1-equifax.html" alt="Equifax Data Breach" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides">
+                <article class="blog-post">
+                    <img src="media/AdobeStock_129961540.jpeg" alt="Cover Image 2">
+                    <div class="post-content">
+                        <h2>NordVPN - VPN Security in the Spotlight</h2>
+                        <p>
+                            The NordVPN security incident in 2019 highlighted the significance of Virtual Private
+                            Networks (VPNs) in safeguarding user data. While not a data breach, NordVPN faced criticism
+                            when it was revealed that unauthorized access had occurred on a server due to a security
+                            misconfiguration.
+                        </p>
+                        <a href="ns-blog2-nordvpn.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides">
+                <article class="blog-post">
+                    <img src="media/pexels-manuel-geissinger-325229.jpg" alt="Target Data Breach">
+                    <h2>Target's Data Breach - Lessons in Secure Network Design</h2>
+                    <p>
+                        The Target data breach of 2013 stands as a classic example of the importance of secure network
+                        design. Hackers gained access to Target's network through a third-party HVAC vendor, exploiting
+                        weak network segmentation and inadequate access controls.
+                    </p>
+                    <a href="ns-blog3-target.html" class="read-more">Read More</a>
+            </div>
+            </article>
+        </div>
+        <!-- Slide 4 -->
+        <div class="mySlides">
+            <article class="blog-post">
+                <img src="media/pexels-pixabay-163047.jpg" alt="Marriott's Wireless Network Security Challenge">
+                <h2>Marriott's Wireless Network Security Challenge</h2>
+                <p>
+                    Marriott's data breach in 2018 exposed the challenges associated with wireless network security. The
+                    breach, affecting millions of guests, resulted from unauthorised access to the hotel chain's
+                    reservation database.
+                </p>
+                <a href="ns-blog4-marriott.html" class="read-more">Read More</a>
+        </div>
+        </article>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="example-breach-section">
+        <!-- Slideshow container for Example Breach Section -->
+        <div class="breach-slideshow-container">
+            <!-- Slide 1 - Blog Post -->
+            <div class="mySlides">
+                <article class="blog-post">
+                    <h2>Example Network Breach - Brute Force</h2>
+                    <p>
+                        In this section, we'll explore a fictional scenario demonstrating a network security fault and
+                        how it might
+                        be exploited.
+                    </p>
+
+                    <h3>Scenario: Insecure Remote Access</h3>
+                    <p>
+                        One common network security fault is insecure remote access. Let's consider a scenario where a
+                        network
+                        allows
+                        remote access with weak authentication.
+                    </p>
+
+                    <h3>Exploitation</h3>
+                    <p>
+                        An attacker discovers a poorly configured remote access service (e.g., SSH) with weak passwords.
+                        They
+                        attempt
+                        to gain unauthorised access using a brute-force attack.
+                    </p>
+
+                    <h3>Code Snippets</h3>
+
+                    <!-- Bash Code Block -->
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>Bash</span>
+                            <button class="copy-button" data-code-id="bashCode1">Copy</button>
+                        </div>
+                        <pre><code class="bash" id="bashCode1">
+# Attempting to brute-force SSH with weak passwords
+for password in $(cat password_list.txt); do
+    ssh username@target_server -p 22 -o PasswordAuthentication=yes -o PubkeyAuthentication=no -o PreferredAuthentications=password -o ChallengeResponseAuthentication=no -o UsePAM=no -o PermitRootLogin=no -o PermitEmptyPasswords=no -o AuthenticationMethods=password -o PasswordAuthentication=yes -o KbdInteractiveAuthentication=no -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR -o ConnectTimeout=5 -o BatchMode=yes -o ServerAliveInterval=10 -o ServerAliveCountMax=3 -o User=username -o Password=$password
+done
+                        </code></pre>
+                    </div>
+                    <h3>Mitigation</h3>
+                    <p>
+                        To mitigate such vulnerabilities, organisations should enforce strong authentication practices,
+                        implement
+                        two-factor authentication, and regularly audit and monitor remote access logs for suspicious
+                        activities.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Slide 2 - Another example -->
+            <div class="mySlides">
+                <article class="blog-post">
+                    <h2>Example Network Breach - SQL Injection</h2>
+                    <p>
+                        In this section, we'll explore a scenario involving a common web application vulnerability known
+                        as SQL Injection.
+                    </p>
+
+                    <h3>Scenario: Vulnerable Login Form</h3>
+                    <p>
+                        A web application uses a login form to authenticate users. However, the login form is vulnerable
+                        to SQL Injection.
+                    </p>
+
+                    <h3>Exploitation</h3>
+                    <p>
+                        An attacker discovers the vulnerability and manipulates the input fields to bypass
+                        authentication and gain unauthorised access.
+                    </p>
+
+                    <h3>Code Snippet - SQL Injection</h3>
+
+                    <!-- SQL Code Block -->
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>SQL</span>
+                            <button class="copy-button" onclick="copyToClipboard('sqlCode1')">Copy</button>
+                        </div>
+                        <pre><code class="sql" id="sqlCode1">
+-- SQL code for a vulnerable login form
+SELECT * FROM users
+WHERE username = 'input_username' AND password = 'input_password';
+
+-- Malicious input for SQL injection
+' OR '1'='1'; --
+-- This input alters the query condition and allows unauthorised access
+    </code></pre>
+                    </div>
+
+                    <h3>Mitigation</h3>
+                    <p>
+                        To prevent SQL Injection attacks, developers should use parameterised queries or prepared
+                        statements and input validation.
+                    </p>
+                    <h4>Prepared Statements</h4>
+                    <!-- PHP Code Block -->
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>PHP</span>
+                            <button class="copy-button" onclick="copyToClipboard('phpCode2')">Copy</button>
+                        </div>
+                        <pre><code class="php" id="phpCode2">
+<i>// Using prepared statements in PHP</i>
+<br>$stmt = $pdo->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
+$stmt->execute([$input_username, $input_password]);
+$user = $stmt->fetch();
+                        </code></pre>
+                    </div>
+
+                    <h4>Input Validation</h4>
+                    <!-- PHP Code Block -->
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>PHP</span>
+                            <button class="copy-button" onclick="copyToClipboard('phpCode3')">Copy</button>
+                        </div>
+                        <pre><code class="php" id="phpCode3">
+<i>// Input validation in PHP</i>
+if (preg_match('/^[a-zA-Z0-9]+$/', $input_username)) {
+    <i>// Valid username format</i>
+} else {
+    <i>// Invalid username format, handle appropriately</i>
+}
+                        </code>
+                    </pre>
+                    </div>
+                    <p>
+                        Implementing prepared statements and input validation helps prevent malicious SQL Injection
+                        attempts.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Slide 3 - Another example -->
+            <div class="mySlides">
+                <article class="blog-post">
+                    <h2>WannaCry Ransomware (2017)</h2>
+                    <p>
+                        WannaCry exploited a vulnerability in Microsoft Windows, spreading rapidly across networks. It
+                        encrypted
+                        files on infected computers and demanded a ransom for their release.
+                    </p>
+
+                    <h3>Scenario</h3>
+                    <p>
+                        The malware leveraged the EternalBlue exploit, originally developed by the NSA. It targeted
+                        unpatched Windows
+                        systems, affecting hospitals, businesses, and government organisations globally.
+                    </p>
+
+                    <h3>Exploitation</h3>
+                    <p>
+                        WannaCry exploited a vulnerability in unpatched Windows systems using the EternalBlue exploit.
+                    </p>
+
+                    <h3>Code Snippet</h3>
+                    <!-- Bash Code Block -->
+                    <div class="code-container">
+                        <div class="code-header">
+                            <span>Bash</span>
+                            <button class="copy-button" onclick="copyToClipboard('bashCode2')">Copy</button>
+                        </div>
+                        <pre><code class="bash" id="bashCode2">
+<i># EternalBlue exploit code snippet</i>
+<i># (Note: This is a simplified example for illustrative purposes)</i>
+<br>msf > use exploit/windows/smb/ms17_010_eternalblue
+<br><i># This line tells Metasploit to use the EternalBlue exploit module for Windows SMB with the identifier ms17_010_eternalblue.</i>
+                    
+<br>msf exploit(ms17_010_eternalblue) > set RHOSTS target_ip
+<br><i># This line sets the target IP address (RHOSTS) for the exploit. Replace 'target_ip' with the actual IP address of the target system.</i>
+                    
+<br>msf exploit(ms17_010_eternalblue) > exploit
+<br><i># This line executes the exploit. Once executed, it attempts to take advantage of the EternalBlue vulnerability on the specified target IP.</i>
+                        </code>
+                    </pre>
+                    </div>
+
+                    <h3>Mitigation</h3>
+                    <p>
+                        1. <strong>Patching:</strong> Apply Microsoft's security patch to address the
+                        vulnerability.<br>
+                        2. <strong>Endpoint Protection:</strong> Utilise advanced endpoint protection solutions to
+                        detect and block WannaCry.<br>
+                        3. <strong>Network Segmentation:</strong> Isolate critical systems to prevent the spread of
+                        the
+                        malware.
+                    </p>
+                </article>
+            </div>
+
+
+            <!-- Dots for navigation -->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Stella. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
