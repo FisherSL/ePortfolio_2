@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 8 e-Portfolio Activity: Summary Measures Worksheets</title>
+    <link rel="stylesheet" href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Unit 8 e-Portfolio Activity: Summary Measures Worksheets</h1>
+        </div>
+    </header>
+    <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <div class="exit-btn">&times;</div>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\index.html">Home</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\network-security.html">Network
+            Security</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\secure-software.html">Secure Software
+            Development</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\risk-management.html">Risk
+            Management</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\secure-software.html">Secure Systems
+            Architecture</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\human-factor.html">Human Factor</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\digital-forensics.html">Digital
+            Forensics and Cyber Law</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research-methods.html">Research
+            Methods</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\contact.html">Contact</a>
+    </nav>
+
+
+
+    <section class="discussion-section">
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit8\landingu8.html"
+                        class="back-button">← Back to Unit 8</a>
+                </section>
+
+                <h2>Summary Measures Worksheet: Exercise 8 Heather</h2>
+                <h2>Heather Species Prevalence Analysis for Locations A and B</h2>
+
+                <h3>Hypothesis Testing</h3>
+                <ul>
+                    <li><strong>Null Hypothesis (H<sub>0</sub>):</strong> There is no significant difference in the
+                        prevalence of the target species between Location A and Location B.</li>
+                    <li><strong>Alternative Hypothesis (H<sub>1</sub>):</strong> There is a significant difference in
+                        the prevalence of the target species between Location A and Location B.</li>
+                    <li><strong>Level of Significance (α):</strong> 0.05</li>
+                </ul>
+                <h2>Chi-Square Test for Independence - Step-by-Step Guide</h2>
+                <p>Here is how I performed a Chi-square test for independence in Excel using the given data.</p>
+
+                <h3>Step 1: Input the Data</h3>
+                <p>First, I entered the data into an Excel worksheet in a format similar to the table below:</p>
+                <table>
+                    <tr>
+                        <th>Prevalence</th>
+                        <th>Location A</th>
+                        <th>Location B</th>
+                    </tr>
+                    <tr>
+                        <td>Absent</td>
+                        <td>8</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Sparse</td>
+                        <td>22</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Abundant</td>
+                        <td>26</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>56</strong></td>
+                        <td><strong>44</strong></td>
+                    </tr>
+                </table>
+
+                <h3>Step 2: Calculate the Row Totals</h3>
+                <p>Next, I calculated the row totals for each prevalence category:</p>
+                <ul>
+                    <li>In cell <code>D2</code>, I entered the formula <code>=B2+C2</code> and dragged it down to
+                        <code>D4</code>.
+                    </li>
+                    <li>In cell <code>D5</code>, I entered the formula <code>=SUM(D2:D4)</code>.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Prevalence</th>
+                        <th>Location A</th>
+                        <th>Location B</th>
+                        <th>Row Totals</th>
+                    </tr>
+                    <tr>
+                        <td>Absent</td>
+                        <td>8</td>
+                        <td>20</td>
+                        <td>=B2+C2</td>
+                    </tr>
+                    <tr>
+                        <td>Sparse</td>
+                        <td>22</td>
+                        <td>14</td>
+                        <td>=B3+C3</td>
+                    </tr>
+                    <tr>
+                        <td>Abundant</td>
+                        <td>26</td>
+                        <td>10</td>
+                        <td>=B4+C4</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>56</strong></td>
+                        <td><strong>44</strong></td>
+                        <td>=SUM(D2:D4)</td>
+                    </tr>
+                </table>
+
+                <h3>Step 3: Calculate the Expected Frequencies</h3>
+                <p>Then, I calculated the expected frequency for each cell using the formula:</p>
+                <p><code>E<sub>ij</sub> = (Row Total × Column Total) / Grand Total</code></p>
+                <ul>
+                    <li>I created a new table for expected frequencies below the observed frequencies table.</li>
+                    <li>In cell <code>B8</code>, I entered the formula <code>=(D2*$B$5)/$D$5</code> and dragged it down
+                        to <code>B10</code>.</li>
+                    <li>In cell <code>C8</code>, I entered the formula <code>=(D2*$C$5)/$D$5</code> and dragged it down
+                        to <code>C10</code>.</li>
+                </ul>
+
+
+                <h3>Step 4: Find the Critical Value and Compare</h3>
+                <ol>
+                    <li>Calculate the expected frequencies (E) using the formula:
+                        <pre>E<sub>ij</sub> = (Row Total * Column Total) / Grand Total</pre>
+                    </li>
+                    <li>Calculate the expected frequencies for each cell:
+                        <ul>
+                            <li>Absent, Location A: (56 * 28) / 100 = 15.68</li>
+                            <li>Absent, Location B: (44 * 28) / 100 = 12.32</li>
+                            <li>Sparse, Location A: (56 * 22) / 100 = 12.32</li>
+                            <li>Sparse, Location B: (44 * 22) / 100 = 9.68</li>
+                            <li>Abundant, Location A: (56 * 26) / 100 = 14.56</li>
+                            <li>Abundant, Location B: (44 * 26) / 100 = 11.44</li>
+                        </ul>
+                    </li>
+                    <li>Input the expected frequencies into another table in Excel.</li>
+                    <li>Use the formula for each cell to calculate the Chi-square component:
+                        <pre>(O<sub>i</sub> - E<sub>i</sub>)^2 / E<sub>i</sub></pre>
+                    </li>
+                    <li>Calculate the Chi-square components for each cell:
+                        <ul>
+                            <li>Absent, Location A: (8 - 15.68)^2 / 15.68 ≈ 3.76</li>
+                            <li>Absent, Location B: (20 - 12.32)^2 / 12.32 ≈ 4.77</li>
+                            <li>Sparse, Location A: (22 - 12.32)^2 / 12.32 ≈ 7.63</li>
+                            <li>Sparse, Location B: (14 - 9.68)^2 / 9.68 ≈ 1.93</li>
+                            <li>Abundant, Location A: (26 - 27.44)^2 / 27.44 ≈ 0.07</li>
+                            <li>Abundant, Location B: (10 - 11.56)^2 / 11.56 ≈ 0.21</li>
+                        </ul>
+                    </li>
+                    <li>Sum these values to get the total Chi-square statistic:
+                        <pre>χ² = 3.76 + 4.77 + 7.63 + 1.93 + 0.07 + 0.21 = 18.37</pre>
+                    </li>
+                    <li>Compare the calculated Chi-square value (18.37) to the critical value from the Chi-square
+                        distribution table with 2 degrees of freedom at a 0.05 significance level (which is
+                        approximately 5.991).</li>
+                    <li>Since 18.37 > 5.991, we reject the null hypothesis.</li>
+                </ol>
+
+                <h2>Conclusion</h2>
+                <p>Given that the calculated Chi-square value (18.37) is greater than the critical value (5.991), we
+                    reject the null hypothesis. This indicates that there is a significant difference in the prevalence
+                    of the species between the two locations.</p>
+                </p>
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit8\rm-unit8-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 8 Sample Statistics for Diet A and Diet B (Weight Loss)</h2>
+                <p>The data relates to the weight losses achieved by two separate samples of 50 human subjects, each of
+                    whom undertook one of two different weight-reducing diets (A or B). The data is shown below:</p>
+                <table border="1">
+                    <tr>
+                        <th>Diet</th>
+                        <th>Wtloss</th>
+                    </tr>
+                    <!-- Insert data rows here -->
+                    <tr>
+                        <td>A</td>
+                        <td>3.709</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>7.087</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>6.754</td>
+                    </tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <!-- (Add all other rows here) -->
+                    <tr>
+                        <td>B</td>
+                        <td>2.594</td>
+
+                    </tr>
+                    <td>...</td>
+                    <td>...</td>
+                </table>
+
+                <h2>Step-by-Step Guide</h2>
+                <h3>1. State the Hypotheses</h3>
+                <p>I start by stating the null and alternative hypotheses:</p>
+                <p><strong>Null Hypothesis (H<sub>0</sub>):</strong> There is no difference in the mean weight loss
+                    between Diet A and Diet B.</p>
+                <p><strong>Alternative Hypothesis (H<sub>1</sub>):</strong> There is a difference in the mean weight
+                    loss between Diet A and Diet B.</p>
+
+                <h3>2. Set the Criteria for the Decision</h3>
+                <p>I set the level of significance for the test. For this example, I choose a 5% level of significance
+                    (α = 0.05).</p>
+
+                <h3>3. Compute the Test Statistic</h3>
+                <p>To compute the test statistic, I follow these steps:</p>
+                <ol>
+                    <li>Calculate the mean weight loss for each diet:</li>
+                    <pre>Mean_A = (Sum of all weight losses for Diet A) / n_A
+            Mean_B = (Sum of all weight losses for Diet B) / n_B</pre>
+                    <li>Calculate the standard deviation for each diet:</li>
+                    <pre>SD_A = sqrt(Sum of squared deviations from the mean for Diet A / (n_A - 1))
+            SD_B = sqrt(Sum of squared deviations from the mean for Diet B / (n_B - 1))</pre>
+                    <li>Calculate the standard error of the difference between the two means:</li>
+                    <pre>SE_diff = sqrt((SD_A^2 / n_A) + (SD_B^2 / n_B))</pre>
+                    <li>Compute the t-statistic:</li>
+                    <pre>t = (Mean_A - Mean_B) / SE_diff</pre>
+                </ol>
+
+                <h3>4. Make a Decision</h3>
+                <p>Using the calculated t-statistic and the degrees of freedom, I compare the t-statistic to the
+                    critical t-value from the t-distribution table at the chosen significance level.</p>
+                <p>Degrees of freedom (df) can be approximated using the formula for unequal variances:</p>
+                <pre>df = ((SD_A^2 / n_A) + (SD_B^2 / n_B))^2 / [((SD_A^2 / n_A)^2 / (n_A - 1)) + ((SD_B^2 / n_B)^2 / (n_B - 1))]</pre>
+                <p>If the absolute value of the t-statistic is greater than the critical t-value, I reject the null
+                    hypothesis. Otherwise, I fail to reject the null hypothesis.</p>
+
+                <h2>Conclusion</h2>
+                <p>Given the data, I calculate the following:</p>
+                <ul>
+                    <li>Mean weight loss for Diet A: 5.341 kg</li>
+                    <li>Standard deviation for Diet A: 2.536 kg</li>
+                    <li>Mean weight loss for Diet B: 3.710 kg</li>
+                    <li>Standard deviation for Diet B: 2.769 kg</li>
+                </ul>
+                <p>Using these values, I compute the test statistic:</p>
+                <pre>SE_diff = sqrt((2.536^2 / 50) + (2.769^2 / 50)) ≈ 0.523
+            t = (5.341 - 3.710) / 0.523 ≈ 3.118</pre>
+                <p>With 98 degrees of freedom (using the approximation formula for df), the critical t-value at α = 0.05
+                    is approximately 1.984.</p>
+                <p>Since 3.118 > 1.984, I reject the null hypothesis.</p>
+                <p><strong>Conclusion:</strong> There is a significant difference in the mean weight loss between Diet A
+                    and Diet B.</p>
+
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit8\rm-unit8-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 8 Hypothesis Testing for Income Data</h2>
+                <p>The data set shows the incomes of 60 male and 60 female cardholders of a certain bank's "Superplus
+                    Diamond" card:</p>
+                <table border="1">
+                    <tr>
+                        <th>Sex</th>
+                        <th>Income (£'000's)</th>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <td>M</td>
+                    <td>40.6</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>54.6</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>38.6</td>
+                    </tr>
+                    <!-- (Add all other rows here) -->
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>57.8</td>
+                    </tr>
+                </table>
+
+                <h2>Step-by-Step Guide</h2>
+                <h3>1. State the Hypotheses</h3>
+                <p>I start by stating the null and alternative hypotheses:</p>
+                <p><strong>Null Hypothesis (H<sub>0</sub>):</strong> There is no difference in the mean income between
+                    males and females.</p>
+                <p><strong>Alternative Hypothesis (H<sub>1</sub>):</strong> There is a difference in the mean income
+                    between males and females.</p>
+
+                <h3>2. Set the Criteria for the Decision</h3>
+                <p>I set the level of significance for the test. For this example, I choose a 5% level of significance
+                    (α = 0.05).</p>
+
+                <h3>3. Compute the Test Statistic</h3>
+                <p>To compute the test statistic, I follow these steps:</p>
+                <ol>
+                    <li>Calculate the mean income for males and females:</li>
+                    <pre>Mean_Male = (Sum of all incomes for males) / n_male = 53.5183
+            Mean_Female = (Sum of all incomes for females) / n_female = 42.3733</pre>
+                    <li>Calculate the standard deviation for males and females:</li>
+                    <pre>SD_Male = sqrt(Sum of squared deviations from the mean for males / (n_male - 1)) ≈ 15.0785
+            SD_Female = sqrt(Sum of squared deviations from the mean for females / (n_female - 1)) ≈ 15.0396</pre>
+                    <li>Calculate the pooled standard deviation:</li>
+                    <pre>Pooled_SD = sqrt(((n_male - 1) * SD_Male^2 + (n_female - 1) * SD_Female^2) / (n_male + n_female - 2))
+            Pooled_SD ≈ 15.0591</pre>
+                    <li>Compute the t-statistic:</li>
+                    <pre>t = (Mean_Male - Mean_Female) / (Pooled_SD * sqrt(1/n_male + 1/n_female))
+            t ≈ 4.1925</pre>
+                </ol>
+
+                <h3>4. Make a Decision</h3>
+                <p>Using the calculated t-statistic and the degrees of freedom, I compare the t-statistic to the
+                    critical t-value from the t-distribution table at the chosen significance level.</p>
+                <p>Degrees of freedom (df) is equal to the sum of the sample sizes minus 2:</p>
+                <pre>df = n_male + n_female - 2 = 118</pre>
+                <p>Critical t-value for df = 118 at α = 0.05 (two-tailed) ≈ ±1.980.</p>
+                <p>Since the absolute value of the t-statistic (4.1925) is greater than the critical t-value (1.980), I
+                    reject the null hypothesis.</p>
+
+                <h2>Conclusion</h2>
+                <p><strong>Conclusion:</strong> There is a significant difference in the mean income between males and
+                    females.</p>
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit8\rm-unit8-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 8 Brand Preference Analysis Two-Sample t-Test</h2>
+
+                <h2>Step-by-Step Guide</h2>
+
+                <h3>1. State the Hypotheses</h3>
+                <p><strong>Null Hypothesis (H<sub>0</sub>):</strong> There is no difference in mean brand preference
+                    between the two demographic areas.</p>
+                <p><strong>Alternative Hypothesis (H<sub>1</sub>):</strong> There is a difference in mean brand
+                    preference between the two demographic areas.</p>
+
+                <h3>2. Set the Criteria for the Decision</h3>
+                <p>For this test, we choose a 5% level of significance (α = 0.05).</p>
+
+                <h3>3. Compute the Test Statistic</h3>
+                <table border="1">
+                    <caption>Calculation of Test Statistic</caption>
+                    <tr>
+                        <th></th>
+                        <th>Area 1</th>
+                        <th>Area 2</th>
+                    </tr>
+                    <tr>
+                        <th>Mean</th>
+                        <td>2.3</td>
+                        <td>2.0</td>
+                    </tr>
+                    <tr>
+                        <th>Standard Deviation</th>
+                        <td>0.71</td>
+                        <td>0.63</td>
+                    </tr>
+                    <tr>
+                        <th>Pooled Standard Deviation</th>
+                        <td colspan="2">0.68</td>
+                    </tr>
+                    <tr>
+                        <th>t-Statistic</th>
+                        <td colspan="2">3.12</td>
+                    </tr>
+                </table>
+                <p>Calculation Details:</p>
+                <table border="1">
+                    <caption>Calculation of Test Statistic</caption>
+                    <tr>
+                        <th></th>
+                        <th>Area 1</th>
+                        <th>Area 2</th>
+                    </tr>
+                    <tr>
+                        <th>Mean (Brand A)</th>
+                        <td>=(SUMIF(A:A, 1, B:B) / COUNTIF(A:A, 1))</td>
+                        <td>=(SUMIF(A:A, 2, B:B) / COUNTIF(A:A, 2))</td>
+                    </tr>
+                    <tr>
+                        <th>Mean (Brand B)</th>
+                        <td>=(SUMIF(A:A, 1, B:B) / COUNTIF(A:A, 1))</td>
+                        <td>=(SUMIF(A:A, 2, B:B) / COUNTIF(A:A, 2))</td>
+                    </tr>
+                    <tr>
+                        <th>Mean (Other Brands)</th>
+                        <td>=(SUMIF(A:A, 1, B:B, "<>A") / COUNTIF(A:A, 1))</td>
+                        <td>=(SUMIF(A:A, 2, B:B, "<>A") / COUNTIF(A:A, 2))</td>
+                    </tr>
+                </table>
+                <p>Calculation Details:</p>
+                <ul>
+                    <li>Mean (Brand A): Average brand preference score for Brand A in each area. Calculated by summing
+                        brand preference scores for Brand A in each area and dividing by the count of responses in Area
+                        1 and Area 2, respectively.</li>
+                    <li>Mean (Brand B): Average brand preference score for Brand B in each area. Calculated by summing
+                        brand preference scores for Brand B in each area and dividing by the count of responses in Area
+                        1 and Area 2, respectively.</li>
+                    <li>Mean (Other Brands): Average brand preference score for other brands in each area. Calculated by
+                        summing brand preference scores for all other brands (excluding Brand A and Brand B) in each
+                        area and dividing by the count of responses in Area 1 and Area 2, respectively.</li>
+                </ul>
+                <ul>
+                    <li>Mean: Sum of brand preferences divided by the number of observations in each area.</li>
+                    <li>Standard Deviation: Measure of dispersion of brand preferences within each area.</li>
+                    <li>Pooled Standard Deviation: Combined measure of variability between the two areas.</li>
+                    <li>t-Statistic: Measure of difference in mean brand preferences between the two areas.</li>
+                </ul>
+
+                <h3>4. Make a Decision</h3>
+                <p>Using the calculated t-statistic (3.12) and degrees of freedom (48), we compare it to the critical
+                    t-value from the t-distribution table at the chosen significance level (α = 0.05).</p>
+                <p>For df = 48 and α = 0.05, the critical t-value is approximately ±2.010.</p>
+                <p>Since the absolute value of the calculated t-statistic (3.12) exceeds the critical t-value (2.010),
+                    we reject the null hypothesis.</p>
+
+                <h2>Conclusion</h2>
+                <p><strong>Conclusion:</strong> Based on the two-sample t-test analysis, we reject the null hypothesis
+                    and conclude that there is a significant difference in mean brand preference between individuals in
+                    the two demographic areas.</p>
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit8\rm-unit8-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 8 Detergent Container Designs Analysis Two-Sample t-Test</h2>
+
+                <h2>Step-by-Step Guide</h2>
+
+                <h3>1. State the Hypotheses</h3>
+                <p><strong>Null Hypothesis (H<sub>0</sub>):</strong> There is no difference in mean number of items sold
+                    between the two container designs.</p>
+                <p><strong>Alternative Hypothesis (H<sub>1</sub>):</strong> There is a difference in mean number of
+                    items sold between the two container designs.</p>
+
+                <h3>2. Set the Criteria for the Decision</h3>
+                <p>For this test, we choose a 5% level of significance (α = 0.05).</p>
+
+                <h3>3. Compute the Test Statistic</h3>
+                <table border="1">
+                    <caption>Calculation of Test Statistic</caption>
+                    <tr>
+                        <th></th>
+                        <th>Container Design 1</th>
+                        <th>Container Design 2</th>
+                    </tr>
+                    <tr>
+                        <th>Mean</th>
+                        <td>172.6</td>
+                        <td>159.4</td>
+                    </tr>
+                    <tr>
+                        <th>Standard Deviation</th>
+                        <td>26.39</td>
+                        <td>28.10</td>
+                    </tr>
+                    <tr>
+                        <th>Sample Size</th>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th>Pooled Standard Deviation</th>
+                        <td colspan="2">26.685</td>
+                    </tr>
+                    <tr>
+                        <th>t-Statistic</th>
+                        <td colspan="2">0.467</td>
+                    </tr>
+                    <tr>
+                        <th>Difference in Mean</th>
+                        <td colspan="2">13.2</td>
+                    </tr>
+                </table>
+                <p>Calculation Details:</p>
+                <ul>
+                    <li>Mean: Average number of items sold for each container design.</li>
+                    <li>Standard Deviation: Standard deviation of the number of items sold for each container design.
+                    </li>
+                    <li>Sample Size: Number of observations (stores) for each container design.</li>
+                    <li>Pooled Standard Deviation: Pooled standard deviation calculated using the formula for two-sample
+                        t-test.</li>
+                    <li>t-Statistic: Calculated using the formula for two-sample t-test.</li>
+                    <li>Difference in Mean: The difference between the mean number of items sold for Container Design 1
+                        and Container Design 2.</li>
+                </ul>
+
+                <h3>4. Make a Decision</h3>
+                <p>Using the calculated t-statistic (0.467) and degrees of freedom (18), we compare it to the critical
+                    t-value from the t-distribution table at the chosen significance level (α = 0.05).</p>
+                <p>For df = 18 and α = 0.05, the critical t-value is approximately ±2.101.</p>
+                <p>Since the absolute value of the calculated t-statistic (0.467) does not exceed the critical t-value
+                    (2.101), we fail to reject the null hypothesis.</p>
+
+                <h2>Conclusion</h2>
+                <p><strong>Conclusion:</strong> Based on the two-sample t-test analysis, we fail to reject the null
+                    hypothesis, indicating no significant difference in mean number of items sold between individuals in
+                    the two container designs.</p>
+            </div>
+        </div>
+
+    </section>
+    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit8\rm-unit8-worksh.html"
+        class="back-button">↑ Back to the Top</a>
+    <footer>
+        <p>&copy; 2024 Stella. All Rights Reserved.</p>
+    </footer>
+    <script src="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\script.js"></script>
+</body>
+
+</html>

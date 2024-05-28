@@ -38,9 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    showBlogSlides();
-    showBreachSlides();
-
     function showBlogSlides(n) {
         let i;
         const slides = document.querySelectorAll('.blog-section .mySlides');
@@ -63,8 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         blogDots[blogSlideIndex].classList.add('active');
 
         blogSlideIndex++;
-        /* 
-                setTimeout(showBlogSlides, 11000); */
     }
 
     function showBreachSlides(n) {
@@ -89,25 +84,22 @@ document.addEventListener('DOMContentLoaded', function () {
         breachDots[breachSlideIndex].classList.add('active');
 
         breachSlideIndex++;
-
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const copyButtons = document.querySelectorAll(".copy-button");
+    const copyButtons = document.querySelectorAll(".copy-button");
 
-        copyButtons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                const codeContainer = this.parentNode.nextElementSibling.querySelector('code');
-                const codeText = codeContainer.innerText;
+    copyButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            const codeContainer = this.parentNode.nextElementSibling.querySelector('code');
+            const codeText = codeContainer.innerText;
 
-                const tempTextarea = document.createElement("textarea");
-                tempTextarea.value = codeText;
-                document.body.appendChild(tempTextarea);
-                tempTextarea.select();
-                document.execCommand('copy');
-                document.body.removeChild(tempTextarea);
-                alert("Code copied to clipboard!");
-            });
+            const tempTextarea = document.createElement("textarea");
+            tempTextarea.value = codeText;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+            alert("Code copied to clipboard!");
         });
     });
 });

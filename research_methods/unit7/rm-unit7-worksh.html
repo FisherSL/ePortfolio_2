@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7 e-Portfolio Activity: Summary Measures Worksheets</title>
+    <link rel="stylesheet" href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Unit 7 e-Portfolio Activity: Summary Measures Worksheets</h1>
+        </div>
+    </header>
+    <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <div class="exit-btn">&times;</div>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\index.html">Home</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\network-security.html">Network
+            Security</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\secure-software.html">Secure Software
+            Development</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\risk-management.html">Risk
+            Management</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\secure-software.html">Secure Systems
+            Architecture</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\human-factor.html">Human Factor</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\digital-forensics.html">Digital
+            Forensics and Cyber Law</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research-methods.html">Research
+            Methods</a>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\contact.html">Contact</a>
+    </nav>
+
+
+
+    <section class="discussion-section">
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit7\landingu7.html"
+                        class="back-button">← Back to Unit 7</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 7.1 One-Tailed Test Comparison </h2>
+                <p>See exercise 7.4 in the following sections.</p>
+
+            </div>
+        </div>
+
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit7\rm-unit7-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 7.2 Income Comparison</h2>
+                <p>I conducted an analysis to determine whether the population mean income for males exceeds that of
+                    females using the provided bank cardholder data. Here's the detailed process I followed:</p>
+
+                <h2>Formulating the Hypotheses</h2>
+                <p>
+                    I started by formulating the hypotheses:
+                <ul>
+                    <li>Null hypothesis (H<sub>0</sub>): &mu;<sub>M</sub> &le; &mu;<sub>F</sub> (The mean income for
+                        males is less than or equal to the mean income for females)</li>
+                    <li>Alternative hypothesis (H<sub>A</sub>): &mu;<sub>M</sub> &gt; &mu;<sub>F</sub> (The mean income
+                        for males is greater than the mean income for females)</li>
+                </ul>
+                </p>
+
+                <h2>Assumptions</h2>
+                <p>I made the following assumptions for the t-test:</p>
+                <ul>
+                    <li>The incomes for both males and females are normally distributed.</li>
+                    <li>The variances of the two populations are equal (homogeneity of variance).</li>
+                    <li>The samples are independent.</li>
+                </ul>
+
+                <h2>Conducting the Test</h2>
+                <p>Next, I performed an independent two-sample t-test assuming equal variances. Here’s how I did it:</p>
+
+                <h3>1. Calculating Descriptive Statistics</h3>
+                <p>
+                    I calculated the mean and standard deviation for both male and female incomes using the following
+                    Excel formulas:
+                <ul>
+                    <li>Mean for Males: <code>=AVERAGE(B2:B61)</code></li>
+                    <li>Mean for Females: <code>=AVERAGE(B62:B121)</code></li>
+                    <li>Standard Deviation for Males: <code>=STDEV.P(B2:B61)</code></li>
+                    <li>Standard Deviation for Females: <code>=STDEV.P(B62:B121)</code></li>
+                </ul>
+                </p>
+
+                <h3>2. Using Excel's Data Analysis Toolpak</h3>
+                <p>
+                    I enabled the Data Analysis Toolpak in Excel and followed these steps:
+                <ul>
+                    <li>Went to <strong>Data</strong> -> <strong>Data Analysis</strong> -> <strong>t-Test: Two-Sample
+                            Assuming Equal Variances</strong>.</li>
+                    <li>Selected the ranges for male (<code>B2:B61</code>) and female (<code>B62:B121</code>) income
+                        data.</li>
+                    <li>Set the hypothesised mean difference to 0.</li>
+                    <li>Chose a confidence level of 95%.</li>
+                    <li>Selected the output range for the results.</li>
+                </ul>
+                </p>
+
+                <h3>3. Interpreting the Output</h3>
+                <p>Based on the results from Excel:</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Income M</th>
+                        <th>Income F</th>
+                    </tr>
+                    <tr>
+                        <td>Mean</td>
+                        <td>52.91</td>
+                        <td>44.23</td>
+                    </tr>
+                    <tr>
+                        <td>Variance</td>
+                        <td>233.13</td>
+                        <td>190.18</td>
+                    </tr>
+                    <tr>
+                        <td>Observations</td>
+                        <td>60</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Pooled Variance</td>
+                        <td colspan="2">211.65</td>
+                    </tr>
+                    <tr>
+                        <td>Hypothesised Mean Difference</td>
+                        <td colspan="2">0</td>
+                    </tr>
+                    <tr>
+                        <td>df</td>
+                        <td colspan="2">118</td>
+                    </tr>
+                    <tr>
+                        <td>t Stat</td>
+                        <td colspan="2">3.27</td>
+                    </tr>
+                    <tr>
+                        <td>P(T<=t) one-tail</td>
+                        <td colspan="2">0.00071</td>
+                    </tr>
+                    <tr>
+                        <td>t Critical one-tail</td>
+                        <td colspan="2">1.66</td>
+                    </tr>
+                    <tr>
+                        <td>P(T<=t) two-tail</td>
+                        <td colspan="2">0.00142</td>
+                    </tr>
+                    <tr>
+                        <td>t Critical two-tail</td>
+                        <td colspan="2">1.98</td>
+                    </tr>
+                    <tr>
+                        <td>Difference in means</td>
+                        <td colspan="2">8.68</td>
+                    </tr>
+                </table>
+
+                <h2>Conclusion</h2>
+                <p>
+                    Based on the results:
+                <ul>
+                    <li>The mean income for males is 8.68 units higher than the mean income for females.</li>
+                    <li>The t-statistic is 3.27, indicating the number of standard errors that the observed difference
+                        in sample means is away from the hypothesised difference in population means.</li>
+                    <li>The one-tailed p-value is 0.00071, which is less than the significance level of 0.05.</li>
+                    <li>The t-statistic (3.27) is greater than the critical t-value for the one-tailed test (1.66),
+                        leading me to reject the null hypothesis.</li>
+                </ul>
+                Given that I reject the null hypothesis, I conclude that there is significant evidence to suggest that
+                the mean income for males is greater than the mean income for females.
+                </p>
+
+                <h2>Assumptions Validation</h2>
+                <p>
+                    To ensure the validity of this test, I would checked the following assumptions:
+                <ul>
+                    <li><strong>Normality:</strong> I would use normality tests like the Shapiro-Wilk test or Q-Q plots
+                        to
+                        check if the impurity distributions are approximately normal.</li>
+                    <li><strong>Equality of Variances:</strong> I would use Levene's test or an F-test to assess the
+                        homogeneity of variances.</li>
+                    <li><strong>Independence:</strong> The samples should be independent of each other.</li>
+                </ul>
+                By validating these assumptions, I can be confident in the results of my t-test analysis.
+                </p>
+
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit7\rm-unit7-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 7.3 Two-Tailed Test for Filtration Data</h2>
+                <p>
+                <p>I conducted an analysis to determine whether the population mean impurity differs between the two
+                    filtration agents using the provided data set. Here's the detailed process I followed:</p>
+
+                <h2>Formulating the Hypotheses</h2>
+                <p>
+                    I started by formulating the hypotheses:
+                <ul>
+                    <li>Null hypothesis (H<sub>0</sub>): &mu;<sub>1</sub> = &mu;<sub>2</sub> (The population mean
+                        impurity for Agent 1 is equal to that of Agent 2)</li>
+                    <li>Alternative hypothesis (H<sub>1</sub>): &mu;<sub>1</sub> ≠ &mu;<sub>2</sub> (The population mean
+                        impurity for Agent 1 is not equal to that of Agent 2)</li>
+                </ul>
+                </p>
+
+                <h2>Assumptions</h2>
+                <p>I made the following assumptions for the t-test:</p>
+                <ul>
+                    <li>The impurity measurements for both filtration agents are normally distributed.</li>
+                    <li>The variances of the two populations are equal (homogeneity of variance).</li>
+                    <li>The samples are independent.</li>
+                </ul>
+
+                <h2>Conducting the Test</h2>
+                <p>Next, I performed a two-tailed t-test to compare the population mean impurity between the two
+                    filtration agents.</p>
+
+                <h3>1. Calculating Descriptive Statistics</h3>
+                <p>
+                    I calculated the mean and standard deviation for both filtration agents' impurity measurements using
+                    the following Excel formulas:
+                <ul>
+                    <li>Mean for Agent 1: <code>=AVERAGE(B2:B13)</code></li>
+                    <li>Mean for Agent 2: <code>=AVERAGE(C2:C13)</code></li>
+                    <li>Standard Deviation for Agent 1: <code>=STDEV.S(B2:B13)</code></li>
+                    <li>Standard Deviation for Agent 2: <code>=STDEV.S(C2:C13)</code></li>
+                </ul>
+                </p>
+
+                <h3>2. Performing the t-Test</h3>
+                <p>
+                    I used Excel's Data Analysis Toolpak to perform the t-test:
+                <ul>
+                    <li>Enabled the Data Analysis Toolpak in Excel.</li>
+                    <li>Went to <strong>Data</strong> -> <strong>Data Analysis</strong> -> <strong>t-Test: Two-Sample
+                            Assuming Equal Variances</strong>.</li>
+                    <li>Selected the impurity measurements for both filtration agents as input ranges.</li>
+                    <li>Set the hypothesised mean difference to 0.</li>
+                    <li>Chose a confidence level.</li>
+                    <li>Selected the output range for the results.</li>
+                </ul>
+                </p>
+
+                <h3>3. Interpreting the Output</h3>
+                <p>Based on the results from Excel:</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Agent1</th>
+                        <th>Agent2</th>
+                    </tr>
+                    <tr>
+                        <td>Mean</td>
+                        <td>8.25</td>
+                        <td>8.683333333</td>
+                    </tr>
+                    <tr>
+                        <td>Variance</td>
+                        <td>1.059090909</td>
+                        <td>1.077878788</td>
+                    </tr>
+                    <tr>
+                        <td>Observations</td>
+                        <td>12</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Pooled Variance</td>
+                        <td colspan="2">1.068484848</td>
+                    </tr>
+                    <tr>
+                        <td>Hypothesised Mean Difference</td>
+                        <td colspan="2">0</td>
+                    </tr>
+                    <tr>
+                        <td>df</td>
+                        <td colspan="2">22</td>
+                    </tr>
+                    <tr>
+                        <td>t Stat</td>
+                        <td colspan="2">-1.026865443</td>
+                    </tr>
+                    <tr>
+                        <td>P(T<=t) two-tail</td>
+                        <td colspan="2">0.315642517</td>
+                    </tr>
+                    <tr>
+                        <td>t Critical two-tail</td>
+                        <td colspan="2">2.073873068</td>
+                    </tr>
+                    <tr>
+                        <td>Difference in means</td>
+                        <td colspan="2">-0.433333333</td>
+                    </tr>
+                </table>
+                <h2>Conclusion</h2>
+                <p>Based on the results:</p>
+                <ul>
+                    <li>The mean impurity for Agent 1 is approximately 0.43 units lower than the mean impurity for Agent
+                        2.</li>
+                    <li>The t-statistic is approximately -1.03, indicating the number of standard errors that the
+                        observed difference in sample means is away from the hypothesied difference in population
+                        means.</li>
+                    <li>The two-tailed p-value is approximately 0.316, which is greater than the significance level of
+                        0.05.</li>
+                    <li>The absolute value of the t-statistic (1.03) is less than the critical t-value for the
+                        two-tailed test (2.07), leading me to fail to reject the null hypothesis.</li>
+                </ul>
+                <p>Given that I fail to reject the null hypothesis, I conclude that there is insufficient evidence to
+                    suggest that the mean impurity differs between the two filtration agents.</p>
+                <h2>Assumptions Validation</h2>
+                <p>
+                    To ensure the validity of this test, I would checked the following assumptions:
+                <ul>
+                    <li><strong>Normality:</strong> I would use normality tests like the Shapiro-Wilk test or Q-Q plots
+                        to
+                        check if the impurity distributions are approximately normal.</li>
+                    <li><strong>Equality of Variances:</strong> I would use Levene's test or an F-test to assess the
+                        homogeneity of variances.</li>
+                    <li><strong>Independence:</strong> The samples should be independent of each other.</li>
+                </ul>
+                By validating these assumptions, I can be confident in the results of my t-test analysis.
+
+                </ul>
+                </p>
+
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit7\rm-unit7-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 7.4 One-Tailed Test Comparison</h2>
+                <p>For a one-tailed test to determine whether Filter Agent 1 is more effective, I would compare the mean
+                    impurity of Agent 1 to that of Agent 2 and focus on the direction of the difference rather than its
+                    magnitude.</p>
+                <p>Here's how the comparison would go based on the provided data:</p>
+                <ul>
+                    <li>Mean Impurity for Agent 1: 8.25</li>
+                    <li>Mean Impurity for Agent 2: 8.683333333</li>
+                </ul>
+                <p>Considering the means, it appears that Agent 1 has a lower impurity on average compared to Agent 2.
+                    However, I need to confirm if this difference is statistically significant in the context of a
+                    one-tailed test.</p>
+                <p>Given that the one-tailed t-test focuses on whether one mean is significantly greater or less than
+                    the other, I would analyse the t-statistic and p-value from the two-tailed test to infer this.</p>
+                <p>From the two-tailed test results:</p>
+                <ul>
+                    <li>t Stat: -1.026865443</li>
+                    <li>P(T&lt;=t) two-tail: 0.315642517</li>
+                    <li>t Critical two-tail: 2.073873068</li>
+                </ul>
+                <p>The t-statistic is negative, indicating that Agent 1's mean impurity is lower than Agent 2's mean
+                    impurity. However, the p-value is greater than the significance level of 0.05, suggesting that this
+                    difference is not statistically significant.</p>
+                <p>If I had conducted a one-tailed test focusing on whether Agent 1's impurity is less than Agent 2's, I
+                    would use the same t-statistic but halve the p-value from the two-tailed test (since the one-tailed
+                    test only looks at one direction of the distribution). If the halved p-value is less than 0.05, I
+                    would reject the null hypothesis and conclude that Agent 1 is indeed more effective than Agent 2 in
+                    reducing impurity.</p>
+                <p>However, since the p-value from the two-tailed test is already greater than 0.05, it's highly
+                    unlikely that halving it for the one-tailed test would yield a significant result. Therefore, based
+                    on the available data, I would still fail to reject the null hypothesis and conclude that there is
+                    insufficient evidence to suggest that Agent 1 is more effective than Agent 2 in reducing impurity.
+                </p>
+
+
+            </div>
+        </div>
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit7\rm-unit7-worksh.html"
+                        class="back-button">↑ Back to the Top</a>
+                </section>
+                <h2>Summary Measures Worksheet: Exercise 7.5 Analysis of Bank Cardholder Data</h2>
+                <p><em>Assuming the data to be suitably distributed, complete an appropriate test of whether the
+                        population mean income for males exceeds that of females and interpret your findings. What
+                        assumptions
+                        underpin the validity of your analysis, and how could you validate them?</p></em>
+
+                <!-- Step-by-step method -->
+                <h3>Step-by-Step Method:</h3>
+                <ol>
+                    <li><strong>Formulate Hypotheses:</strong> Null hypothesis (H<sub>0</sub>): &mu;<sub>M</sub> =
+                        &mu;<sub>F</sub> (The population mean income for males is equal to that of females).
+                        Alternative hypothesis (H<sub>1</sub>): &mu;<sub>M</sub> > &mu;<sub>F</sub> (The population
+                        mean income for males exceeds that of females).</li>
+                    <li><strong>Assumptions:</strong> We assume that the incomes for males and females are normally
+                        distributed, the variances of the two populations are equal, and the samples are
+                        independent.</li>
+                    <li><strong>Collect Data:</strong> Collect the income data for males and females from Data Set
+                        C.</li>
+                    <li><strong>Calculate Descriptive Statistics:</strong> Calculate the mean income for males
+                        (&mu;<sub>M</sub>) and females (&mu;<sub>F</sub>), and the standard deviations for both
+                        groups.</li>
+                    <li><strong>Perform t-Test:</strong> Conduct an independent samples t-test to compare the mean
+                        incomes of males and females.</li>
+                    <li><strong>Interpret Results:</strong> Based on the t-test results, determine whether there is
+                        a statistically significant difference between the mean incomes of males and females. If the
+                        p-value is less than the significance level (e.g., 0.05), reject the null hypothesis and
+                        conclude that the mean income for males exceeds that of females.</li>
+                    <li><strong>Validate Assumptions:</strong> Validate the assumptions of normality, equality of
+                        variances, and independence using appropriate statistical tests or graphical methods (e.g.,
+                        Shapiro-Wilk test for normality, Levene's test for equality of variances).</li>
+                </ol>
+
+                <!-- Calculations -->
+                <h3>Calculations:</h3>
+                <!-- Males -->
+                <p><strong>Males:</strong></p>
+                <ul>
+                    <li>Total number of males: 60</li>
+                    <li>Mean income for males: $52.9</li>
+                    <li>Standard deviation for males: $15.14078891</li>
+                </ul>
+                <!-- Females -->
+                <p><strong>Females:</strong></p>
+                <ul>
+                    <li>Total number of females: 60</li>
+                    <li>Mean income for females: $44.2</li>
+                    <li>Standard deviation for females: $13.67502184</li>
+                </ul>
+
+                <!-- t-Test Results -->
+                <h3>t-Test Results:</h3>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Income M</th>
+                        <th>Income F</th>
+                    </tr>
+                    <tr>
+                        <td>Mean</td>
+                        <td>52.91333333</td>
+                        <td>44.23333333</td>
+                    </tr>
+                    <tr>
+                        <td>Variance</td>
+                        <td>233.1289718</td>
+                        <td>190.1758192</td>
+                    </tr>
+                    <tr>
+                        <td>Observations</td>
+                        <td>60</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Pooled Variance</td>
+                        <td colspan="2">211.6523955</td>
+                    </tr>
+                    <tr>
+                        <td>Hypothesised Mean Difference</td>
+                        <td colspan="2">0</td>
+                    </tr>
+                    <tr>
+                        <td>df</td>
+                        <td colspan="2">118</td>
+                    </tr>
+                    <tr>
+                        <td>t Stat</td>
+                        <td colspan="2">3.267900001</td>
+                    </tr>
+                    <tr>
+                        <td>P(T<=t) one-tail</td>
+                        <td colspan="2">0.000709735</td>
+                    </tr>
+                    <tr>
+                        <td>t Critical one-tail</td>
+                        <td colspan="2">1.657869522</td>
+                    </tr>
+                    <tr>
+                        <td>P(T<=t) two-tail</td>
+                        <td colspan="2">0.00141947</td>
+                    </tr>
+                    <tr>
+                        <td>t Critical two-tail</td>
+                        <td colspan="2">1.980272249</td>
+                    </tr>
+                    <tr>
+                        <td>Difference in means</td>
+                        <td colspan="2">8.68</td>
+                    </tr>
+                </table>
+                <h2>Based on the t-test results:</h2>
+                <ul>
+                    <li>The mean income for males is approximately $52.91, while the mean income for females is
+                        approximately $44.23.</li>
+                    <li>The t-statistic is approximately 3.27, indicating that the difference in mean incomes
+                        between males and females is significant.</li>
+                    <li>The two-tailed p-value is approximately 0.0014, which is less than the significance level of
+                        0.05.</li>
+                    <li>The absolute value of the t-statistic (3.27) exceeds the critical t-value for the two-tailed
+                        test (1.98), indicating a significant difference in mean incomes between males and females.
+                    </li>
+                </ul>
+                <h2>Conclusion:</h2>
+                <p>Given that the two-tailed p-value is less than the significance level of 0.05, we reject the null
+                    hypothesis. Therefore, we conclude that there is sufficient evidence to suggest that the mean
+                    income for males exceeds that of females in the population.</p>
+                <h2>Assumptions Validation:</h2>
+                <p>To validate the assumptions underlying the analysis:</p>
+                <ul>
+                    <li><strong>Normality:</strong> We could perform normality tests such as the Shapiro-Wilk test
+                        or examine Q-Q plots to check if the income distributions for males and females are
+                        approximately normal.</li>
+                    <li><strong>Equality of Variances:</strong> We could use Levene's test or an F-test to assess
+                        the homogeneity of variances between the two groups.</li>
+                    <li><strong>Independence:</strong> We assume that the samples of incomes for males and females
+                        are independent of each other.</li>
+                </ul>
+                <p>By validating these assumptions, we can ensure the reliability and validity of our t-test
+                    analysis.</p>
+            </div>
+        </div>
+        </div>
+        <a href="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\research_methods\unit7\rm-unit7-worksh.html"
+            class="back-button">↑ Back to the Top</a>
+</body>
+
+</html>
+
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Stella. All Rights Reserved.</p>
+</footer>
+<script src="D:\OneDrive - Kaplan International\Documents\Masters\NewPortfolio\script.js"></script>
+</body>
+
+</html>
