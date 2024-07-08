@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflecting on Unit 10</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        a {
+            color: rgb(231, 34, 166);
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Reflecting on Unit 10</h1>
+        </div>
+    </header>
+    <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <div class="exit-btn">&times;</div>
+        <a href="../../index.html">Home</a>
+        <a href="#../../network-security.html">Network Security</a>
+        <a href="#../../secure-software.html">Secure Software Development</a>
+        <a href="#../../risk-management.html">Risk Management</a>
+        <a href="#../../secure-systems.html">Secure Systems Architecture</a>
+        <a href="#../../human-factor.html">Human Factor</a>
+        <a href="#../../digital-forensics.html">Digital Forensics and Cyber Law</a>
+        <a href="../../pages/research-methods.html">Research Methods</a>
+        <a href="../../contact.html">Contact</a>
+    </nav>
+
+    <section class="discussion-section">
+        <div class="discussion-container">
+            <div class="discussion-post">
+                <section class="back-button-section">
+                    <a href="../../research_methods\unit10\landingu10.html" class="back-button">← Back to Unit 10</a>
+                </section>
+                <h2>Unit 10: Capstone Outline</h2>
+                </header>
+                <section>
+                    <p>As well as the final deadline for the Unit 10 summative, we have been asked to consider starting to formalise our thoughts regarding the capstone project by considering the following areas:</p>
+                        <h4>Research area and working title.</h4>
+                        As the course has progressed, I have developed an interest in encryption and the unique problems of its implementation in resource constrained Internet of Things (IoT) environments. My working title is:<br><br>
+                        <em>Investigating the efficacy of lightweight encryption in resources constrained IoT environments.</em>
+                        <h4>Proposed Research Problem and Research Question.</h4>
+                        <p>R1 – What metric of measuring the efficiency of the algorithms best reflects this use case?<br><br>
+                        R2 – Which algorithm is most efficient for the proposed use case?<br><br>
+                        The results of my research could help in the selection of an encryption algorithm most appropriate for a particular use case.</p>
+                        <h4>Proposed Aims and Objectives.</h4>
+                        To develop a system to measure efficiency. Current thoughts are this could include components of encryption time (CPU cycles? Code execution time?), energy usage, memory usage and encryption strength.<br>
+                        Bharathi, et al., (2017) suggest the following for measuring the performance of an encryption algorithm:
+                            <ul>
+                                <li>encryption time / decryption time</li>	
+                                <li>throughput of encryption / throughput of decryption</li>
+                                <li>CPU process time</li>
+                                <li>CPU clock cycles</li>
+                                <li>power consumption</li>
+                                <li>memory use</li>
+                            </ul>
+                        The weighting of each measure will need to be carefully considered for resource constrained IoT environments and a particular use case. For example, for a remote sensor relying on battery power, power consumption will have a higher weighting than a case where the sensor has mains power.
+                        <h4>Proposed Methodology.</h4>
+                            <ul>
+                                <li>Create testing bed.</li>    
+                                <li>Decide on measure of efficiency.</li>
+                                <li>Select algorithms [based on Bouting, (2023)?]</li>
+                                <li>Test algorithms to collect data.</li>
+                                <li>Process and analyse the data to answer R1 & R2.</li>
+                            </ul>
+                        <h4>Artefact(s) that can be created.</h4>
+                            <ol>
+                                <li>A physical testing environment composed of sensors, broker and controller(s).</li>
+                                <li>The Python code required to implement each encryption algorithm over the MQTT protocol between sensor / controller / broker / subscriber.</li>
+                            
+                            </ol>
+                        
+                        <h4>References.</h4>
+                            <p>
+                        Bharathi, B., Manivasagam, G. and Kumar, M.A., (2017) Metrics for performance evaluation of encryption algorithms. <em>Int J Adv Res Sci Eng</em>, 6(3), pp.62-72.<br><br>
+                        Bouting, C. (2023) NIST Selects ‘Lightweight Cryptography’ Algorithms to Protect Small Devices. Available from: https://www.nist.gov/news-events/news/2023/02/nist-selects-lightweight-cryptography-algorithms-protect-small-devices [Accessed 25th June 2024].
+                        </p>
+                    
+                    <section class="back-button-section">
+                        <a href="../../research_methods\unit10\capstone_prop.html" class="back-button">↑ Back to the
+                            Top</a>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Content by Steve Fisher. Template code by <a href="https://stoodlesz.github.io/Resume/#/lessons/k_sXrgOFxT2luG4Kfo9krkOtILEF34S_" target="_blank">Stella Williams </a> All rights reserved</p>
+    </footer>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
